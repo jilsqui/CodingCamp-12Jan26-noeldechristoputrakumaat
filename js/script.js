@@ -28,7 +28,7 @@ form.addEventListener('submit', function(event) {
 function replaceName() {
     let name = prompt("Halo! Siapa nama kamu?", "");
     if (name == null || name == "") {
-        name = "Guest";
+        name = "Pengunjung";
     }
     document.getElementById("userName").innerText = name;
 }

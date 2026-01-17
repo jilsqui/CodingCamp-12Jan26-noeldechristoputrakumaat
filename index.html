@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project-Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="main-container sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="flex justify-between items-center p-4 mx-auto">
+        <div class="logo-container"> 
+            <img src="revou.png" alt="Logo">
+        </div>
+
+        <div id="menu" class="menu-container flex">
+            <a href="index.html" class="border border-black px-6 py-1 rounded">Home</a>
+            <a href="index.html#tengah" class="border border-black px-6 py-1 rounded">My Profile</a>
+            <a href="index.html#headquarter" class="border border-black px-6 py-1 rounded">Portofolio</a>
+            <a href="index.html#message" class="border border-black px-6 py-1 rounded">Message Us</a>
+        </div>
+    </nav>
+    </header>
+
+    <hr class="pembatas-navbar">
+
+    <div id="tengah" class="tengah-container">
+        <h1 class="text-2xl">Hi <span id="userName">Noel</span>, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </div>
+
+    <hr class="pembatas-footer">
+
+    <section id="headquarter" class="headquarter-section text-center p-10 border-b border-black">
+    <h2 class="text-2xl font-bold mb-8">Portofolio</h2>
+    <div class="flex justify-around items-center">
+        <div class="hq-item">
+            <div class="circle">
+                <img src="website-pertama.png" alt="">
+            </div>
+            <p>
+                <a href="https://jilsqui.github.io/produknoel/">Website Pertama</a></p>
+        </div>
+        <div class="hq-item">
+            <div class="circle">
+                <img src="website-kedua.png" alt="">
+            </div>
+            <p>Website Kedua</p>
+        </div>
+        <div id="website-ketiga" class="hq-item" style="cursor: pointer;">
+            <div class="circle"></div>
+            <p>Website Ketiga</p>
+        </div>
+    </div>
+</section>
+
+<section id="message" class="message-section p-10 container mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Message Us</h2>
+    <div class="flex gap-10">
+        <form id="messageform" class="flex-1 flex flex-col gap-4">
+            <input id="nameInput" type="text" placeholder="Nama" class="border p-2">
+            <input id="birthDate" type="date" class="border p-2">
+            <div>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </div>
+            <textarea id="messageText" placeholder="Pesan" class="border p-2 h-32"></textarea>
+            <button type="submit" class="bg-gray-200 border border-black py-2">Submit</button>
+        </form>
+
+        <div class="result-box border border-black flex-1 p-6">
+            <p id="output-text">Hasil input akan muncul di sini...</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</section>
+</body>
+</html>
